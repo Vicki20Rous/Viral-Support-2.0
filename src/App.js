@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+
 import './App.css';
-import Main from "./components/pages/Main";
+import Main from "./components/Pages/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import News from "./components/pages/News";
+import News from "./components/Pages/News";
 
 function App() {
   return (
       <>
         <Router>
-          <Navbar />
+          
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/news" component={News} />
