@@ -1,5 +1,5 @@
 import React from 'react'
-//eslint-disable-next-line
+// eslint-disable-next-line
 export default ({ name, message }) =>
   
   <p>

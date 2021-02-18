@@ -1,18 +1,43 @@
-import React, { Component } from "react";
+import React from "react";
+import { FlatList } from 'react-native';
+import Article from './Article';
+import { getNews } from './Covid19News';
 
-class News extends Component {
-  state = {};
-  render() {
-    return (
-      <div
-        id="News"
-        className="bg-white h-screen flex flex-col justify-center items-center"
-      >
-        <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">
-          News
-        </h1>
-      </div>
+export default class News extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { articles: [], refreshing: true };
+    this.fetchNews = this.fetchNews.bind(this);
+  }
+  // Called after a component is mounted
+  componentDidMount() {
+    this.fetchNews();
+   }
+
+  fetchNews() {
+    getNews()
+      .then(articles => this.setState({ articles, refreshing: false }))
+      .catch(() => this.setState({ refreshing: false }));
+  }
+
+  handleRefresh() {
+    this.setState(
+      {
+        refreshing: true
+    },
+      () => this.fetchNews()
     );
   }
+
+  render() {
+    return (
+      <FlatList
+        data={this.state.articles}
+        renderItem={({ item }) => <Article article={item} />}
+        keyExtractor={item => item.url}
+        refreshing={this.state.refreshing}
+        onRefresh={this.handleRefresh.bind(this)}
+      />
+  );
+  }
 }
-export default News;
