@@ -7,7 +7,7 @@ class newsApiCall extends Component {
         super(props);
         this.state={
             isFetching:false,
-            
+
         }
     }
 }
