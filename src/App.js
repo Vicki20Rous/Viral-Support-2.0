@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-
 import Navbar from "./components/Navbar";
 import Main from "./Pages/Main";
 import Footer from "./components/Footer";
 import Stats from "./Pages/Stats";
 import News from "./Pages/News";
-import Resources from "./Pages/Resources";
 import About from "./Pages/About";
 
 class App extends Component {
@@ -17,7 +15,6 @@ class App extends Component {
         <Main />
         <Stats />
         <News />
-        <Resources />
         <About />
         <Footer />
       </div>
