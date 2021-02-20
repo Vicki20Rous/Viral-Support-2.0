@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import background from "./background.jpg";
-
+import background from "./background.png";
+import "./Main.css"
 class Main extends Component {
   state = {};
   render() {
     return (
-      <main>
+      <main id="/" className="relative sm:p-10 md:p-20 lg:p-32 container mx-auto">
         <img
           src={background}
           alt="Background"

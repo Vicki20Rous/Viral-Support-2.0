@@ -10,10 +10,9 @@ class Navbar extends Component {
       <header className="bg-gray-100">
         <div className="container h-12 px-2 mx-auto flex flex-wrap justify-between">
           <nav className="flex" role="navigation">
-            <Link
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
-              to="Main"
+            <NavLink
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/"
               spy={true}
               smooth={true}
               offset={50}
@@ -21,12 +20,11 @@ class Navbar extends Component {
               onSetActive={Link.handleSetActive}
             >
               Home
-            </Link>
-
+            </NavLink>
+  
             <Link
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
-              to="Stats"
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/Stats"
               spy={true}
               smooth={true}
               offset={50}
@@ -37,9 +35,8 @@ class Navbar extends Component {
             </Link>
 
             <Link
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
-              to="News"
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/News"
               spy={true}
               smooth={true}
               offset={50}
@@ -50,9 +47,8 @@ class Navbar extends Component {
             </Link>
 
             <Link
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
-              to="About"
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/About"
               spy={true}
               smooth={true}
               offset={50}
@@ -61,6 +57,8 @@ class Navbar extends Component {
             >
               About
             </Link>
+
+            
 
             <Dropdown
               options={["Link", "Link", "Link", "Link", "Link"]}
@@ -71,18 +69,22 @@ class Navbar extends Component {
           </nav>
 
           <div className="flex" role="navigation">
+            <Link className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active">
+            Chat
+            </Link>
+
             <NavLink
               to="/Login"
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
+              activeClassName="is-active"
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
             >
               Login
             </NavLink>
 
             <NavLink
               to="/SignUp"
-              activeClassName="text-white"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 text-2xl font-serif active"
+              activeClassName="is-active"
+              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
             >
               Sign Up
             </NavLink>
