@@ -1,0 +1,20 @@
+{
+  "name": "coviddata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "newsapi": "^2.4.1",
+    "rapidapi": "^2.0.3",
+    "request": "^2.88.2",
+    "rss-parser": "^3.10.0"
+  },
+  "description": ""
+}
