@@ -1,91 +1,96 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 class Navbar extends Component {
   state = {};
   render() {
     return (
-      <nav
-        className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
-        role="navigation"
-      >
-        <Link
-          activeClass="active"
-          to="Main"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          onSetActive={this.handleSetActive}
-        >
-          Home
-        </Link>
+      <header className="bg-gray-100">
+        <div className="container h-12 px-2 mx-auto flex flex-wrap justify-between">
+          <nav className="flex" role="navigation">
+            <NavLink
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={Link.handleSetActive}
+            >
+              Home
+            </NavLink>
+  
+            <Link
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/Stats"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={Link.handleSetActive}
+            >
+              Stats
+            </Link>
 
-        <Link
-          activeClass="active"
-          to="Stats"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          onSetActive={this.handleSetActive}
-        >
-          Stats
-        </Link>
+            <Link
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/News"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={Link.handleSetActive}
+            >
+              News
+            </Link>
 
-        <Link
-          activeClass="active"
-          to="News"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          onSetActive={this.handleSetActive}
-        >
-          News
-        </Link>
+            <Link
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              to="/About"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={Link.handleSetActive}
+            >
+              About
+            </Link>
 
-        <Link
-          activeClass="active"
-          to="Resources"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          onSetActive={this.handleSetActive}
-        >
-          Resources
-        </Link>
+            
 
-        <Link
-          activeClass="active"
-          to="About"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          onSetActive={this.handleSetActive}
-        >
-          About
-        </Link>
-
-        <div className="px-4 cursor-pointer md:hidden">
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
+            <Dropdown
+              options={["Link", "Link", "Link", "Link", "Link"]}
+              onOptionSelect={(option) => {
+                console.log("Selected Option", option);
+              }}
             />
-          </svg>
+          </nav>
+
+          <div className="flex" role="navigation">
+            <Link className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active">
+            Chat
+            </Link>
+
+            <NavLink
+              to="/Login"
+              activeClassName="is-active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+            >
+              Login
+            </NavLink>
+
+            <NavLink
+              to="/SignUp"
+              activeClassName="is-active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+            >
+              Sign Up
+            </NavLink>
+          </div>
         </div>
-      </nav>
+      </header>
     );
   }
 }

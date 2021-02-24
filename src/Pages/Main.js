@@ -1,20 +1,17 @@
 import React, { Component } from "react";
-
+import background from "./background.png";
+import "./Background.css"
 class Main extends Component {
   state = {};
   render() {
     return (
-      <div
-        id="Main"
-        className="bg-white h-screen flex flex-col justify-center items-center"
-      >
-        <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-black mb-14">
-          Viral Support
-        </h1>
-        <h2 className="lg:text-5xl md:text-3xl sm:text-2xl text-3xl font-black mb-14">
-          Spread Support, Not COVID!
-        </h2>
-      </div>
+      <main id="/" className="relative sm:p-5 md:p-8 lg:p-10 container mx-auto">
+        <img
+          src={background}
+          alt="Background"
+          className="flex relative object-cover w-full h-full"
+        />
+      </main>
     );
   }
 }
