@@ -11,7 +11,7 @@ class Navbar extends Component {
         <div className="container h-12 px-2 mx-auto flex flex-wrap justify-between">
           <nav className="flex" role="navigation">
             <NavLink
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/"
               spy={true}
               smooth={true}
@@ -23,7 +23,7 @@ class Navbar extends Component {
             </NavLink>
   
             <Link
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/Stats"
               spy={true}
               smooth={true}
@@ -35,7 +35,7 @@ class Navbar extends Component {
             </Link>
 
             <Link
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/News"
               spy={true}
               smooth={true}
@@ -47,7 +47,7 @@ class Navbar extends Component {
             </Link>
 
             <Link
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/About"
               spy={true}
               smooth={true}
@@ -69,14 +69,14 @@ class Navbar extends Component {
           </nav>
 
           <div className="flex" role="navigation">
-            <Link className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active">
+            <Link className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active">
             Chat
             </Link>
 
             <NavLink
               to="/Login"
               activeClassName="is-active"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
             >
               Login
             </NavLink>
@@ -84,7 +84,7 @@ class Navbar extends Component {
             <NavLink
               to="/SignUp"
               activeClassName="is-active"
-              className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
             >
               Sign Up
             </NavLink>

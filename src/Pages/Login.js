@@ -1,57 +1,42 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import "./Background.css";
 
 class Login extends Component {
   state = {};
   render() {
     return (
-      <NavLink to="/Login">
-      <div className="bg-white h-screen flex flex-col justify-center items-center">
-        <div class="loginContainer">
-          <h2>Please login to proceed</h2>
-          <form class="login">
-            <div class="field">
-              <label for="" class="label">
-                Email
+      <main className="relative sm:p-5 md:p-8 lg:p-10 container mx-auto">
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="bg-white p-8 rounded shadow-2xl w-2/3">
+          <h2 className="text-3xl font-bold mb-4 text-red-800">
+            Account Login
+          </h2>
+          <form className="space-y-3">
+            <div>
+              <label className="block mb-5 font-bold" for="name">
+                Username
               </label>
-              <p class="control has-icons-left has-icons-right">
-                <input
-                  id="email-input"
-                  class="input"
-                  type="email"
-                  placeholder="e.g. name@gmail.com"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right"></span>
-              </p>
+              <input
+                className="w-full block border-2 border-red-800 p-3 rounded outline-none focus:border-red-500"
+                type="text"
+                id="name"
+              />
             </div>
-            <div class="field">
-              <label for="" class="label">
+            <div>
+              <label className="block mb-5 font-bold" for="name">
                 Password
               </label>
-              <p class="control has-icons-left">
-                <input
-                  id="password-input"
-                  class="input"
-                  type="password"
-                  placeholder="*******"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-lock"></i>
-                </span>
-              </p>
+              <input
+                className="w-full block border-2 border-red-800 p-3 rounded outline-none focus:border-red-500"
+                type="password"
+                id="password"
+              />
             </div>
-            <div class="field">
-              <p class="control">
-                <button class="button is-success">Login</button>
-              </p>
-            </div>
+            <button className="block w-full bg-red-600 hover:bg-red-400 p-4 rounded font-bold text-white hover:text-red-800 transition duration-300">Login!</button>
           </form>
         </div>
       </div>
-      </NavLink>
+      </main>
     );
   }
 }

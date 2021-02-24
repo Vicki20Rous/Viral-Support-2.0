@@ -10,8 +10,7 @@ function Dropdown({ options, onOptionSelect }) {
       {" "}
       <button
         onClick={() => setActive(!isActive)}
-        className="items-center py-2 px-2 mr-2 text-red-800 hover:text-blue-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
-      >
+        className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"      >
         Resources
       </button>
       <div
