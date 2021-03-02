@@ -8,7 +8,7 @@ class App extends Component {
   }
   handleNewUserMessage = (newMessage) => {
     // eslint-disable-next-line no-template-curly-in-string
-    console.log('New incoming message! ${newMessage}');
+    console.log("New incoming message! ${newMessage}");
     // eslint-disable-next-line no-undef
     addResponseMessage(response);
   }
