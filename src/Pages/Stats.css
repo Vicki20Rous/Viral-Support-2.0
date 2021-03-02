@@ -1,11 +1,5 @@
-#heart {
-  font-family: FontAwesome !important;
-  font-style: normal;
-  text-shadow: 0 0 3px rgb(255, 255, 255);
-}
-
-#about {
-    background-image: url(background2.jpg);
+#stats {
+    background-image: url(background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

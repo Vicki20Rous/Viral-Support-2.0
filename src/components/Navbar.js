@@ -58,14 +58,7 @@ class Navbar extends Component {
               About
             </Link>
 
-            
-
-            <Dropdown
-              options={["Link", "Link", "Link", "Link", "Link"]}
-              onOptionSelect={(option) => {
-                console.log("Selected Option", option);
-              }}
-            />
+            <Dropdown/>
           </nav>
 
           <div className="flex" role="navigation">

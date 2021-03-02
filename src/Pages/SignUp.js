@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./Background.css";
+import "./Main.css";
 
 class SignUp extends Component {
   state = {};
   render() {
     return (
-      <main className="relative sm:p-5 md:p-10 lg:p-16 container mx-auto">
+      <main id="main" className="relative sm:p-5 md:p-10 lg:p-16 container mx-auto">
       <div className="min-h-screen flex items-center justify-center">
         <div className="bg-white p-8 rounded shadow-2xl w-2/3">
           <h2 className="text-3xl font-bold mb-4 text-red-800">
