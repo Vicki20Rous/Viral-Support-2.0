@@ -5,7 +5,7 @@ import newsapi from "./NewsAPI/newsApi";
 
 const Health = () => {
     const [data, setData] = useState([]);
-
+}
     const mergeNewsData = (responses) => {
         const arrNews = [];
         responses.map(response => response.json());
@@ -17,7 +17,7 @@ const Health = () => {
 
     useEffect(() => {
         let unmounted = false;
-
+    
         if (!unmounted) {            
             const arrPromiseNews = [];
             ['us', 'gb', 'cn', 'za', ].map(country => response.json());
@@ -29,7 +29,7 @@ const Health = () => {
                         page: 1
                     })
                 )
-            };
+        };
     
             Promise.all(arrPromiseNews)
                 .then(responses => {
@@ -44,19 +44,19 @@ const Health = () => {
 
             return () => {
             unmounted = true;
-            [];
+            []
     
         }
 
-    });
-    // return (
-    //     <>
-    //         <News 
-    //             category="Health"
-    //             data={data}
-    //         />
-    //     </>
-};
+    };
+    return (
+        <>
+            <News 
+                category="Health"
+                data={data}
+            />
+        </>
+}
 
 export default Health;
 
