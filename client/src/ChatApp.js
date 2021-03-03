@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { addResponseMessage, Chat } from 'react-chat-popup';
 // import logo from 'background2.jpg';
 
-class App extends Component {
+class ChatApp extends Component {
   componentDidMount() {
     addResponseMessage("Welcome to Viral Support Chat");
   }
@@ -26,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default ChatApp
