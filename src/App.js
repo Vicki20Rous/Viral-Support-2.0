@@ -8,6 +8,8 @@ import News from "./Pages/News/News";
 import About from "./Pages/About/About";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+import ChatApp from "./components/ChatApp";
+
 
 class App extends Component {
   state = {};
@@ -22,6 +24,7 @@ class App extends Component {
             <Stats />
             <News />
             <About />
+            <ChatApp />
           </Route>
 
           <Route path="/Login">
