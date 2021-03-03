@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.png";
+import logo from "../../images/logo.png";
 import "./Main.css";
 class Main extends Component {
   state = {};
@@ -8,12 +8,12 @@ class Main extends Component {
       <div id="/">
         <main
           id="main"
-          className="relative sm:p-5 md:p-8 lg:p-10 container mx-auto"
+          // className="relative flex flex-col justify-center container bg-cover bg-contain mx-auto sm:p-10 md:p-20 lg:p-32"
         >
           <img
             src={logo}
             alt="logo"
-            className="flex relative object-cover w-full h-full"
+            // className="flex flex-col relative justify-center container bg-cover bg-contain mx-auto"
           />
         </main>
       </div>

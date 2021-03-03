@@ -1,8 +1,15 @@
 #stats {
-    background-image: url(background.jpg);
+    background-image: url(../../images/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #6e0101;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }

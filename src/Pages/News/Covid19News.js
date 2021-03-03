@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList } from 'react-native';
-import Article from './Article';
-import { getNews } from './Covid19News';
+import Article from './News/Article';
+import { getNews } from './News/Covid19News';
 
 export default class News extends React.Component {
   constructor(props) {

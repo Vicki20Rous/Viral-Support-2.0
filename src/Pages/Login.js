@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Main.css";
+import "./Main/Main.css";
 
 class Login extends Component {
   state = {};
