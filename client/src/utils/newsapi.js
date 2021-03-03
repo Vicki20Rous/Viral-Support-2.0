@@ -4,7 +4,7 @@ import axios from "axios";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
  getNews: function() {
-  return axios.get("https://newsapi.org/v2/everything?q=health&apiKey={96c41822c5bd447d90a6023f747bf769}");
+  return axios.get("http://api.mediastack.com/v1/news?access_key=5f6908ebaf00fb9047a10094bc96ca13&keywords=covid-19&countries=us");
 
   }
 };
