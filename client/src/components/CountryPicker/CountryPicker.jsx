@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NativeSelect, FormControl } from '@material-ui/core';
 
-import { fetchCountries } from '../../utils/Covid19StatsAPI';
+import { fetchCountries } from '../../Pages/Stats/Covid19StatsAPI';
 
 import styles from './CountryPicker.module.css';
 

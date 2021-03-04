@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Main from "./Pages/Main/Main";
 import Footer from "./components/Footer";
 import Stats from "./Pages/Stats/Stats";
-import News from "./components/News";
+import News from "./Pages/News/News";
 import About from "./Pages/About/About";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";

@@ -1,6 +1,6 @@
 import React from "react";
 import { Cards, CountryPicker, Chart } from "../../components";
-import { fetchData } from "../../utils/Covid19StatsAPI";
+import { fetchData } from "./Covid19StatsAPI";
 import "./Stats.css";
 
 class Covid19Stats extends React.Component {

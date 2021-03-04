@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 
-const routes = require("./routes/api");
+const routes = require("./servers/routes/api");
 
 const MONGODB_URI ='mongodb+srv://covid-relief:LuLa7600@cluster0.b2djq.mongodb.net/viralsupport2?retryWrites=true&w=majority';
 
