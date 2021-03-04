@@ -11,6 +11,7 @@
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "classnames": "^2.2.6",
+    "concurrently": "^6.0.0",
     "font-awesome": "^4.7.0",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
@@ -26,10 +27,9 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently -n 'server,client' \"nodemon server.js\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +54,9 @@
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
-  }
+  },
+  "main": "tailwind.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { Cards, CountryPicker, Chart } from "../../components";
-import { fetchData } from "../../api";
+import { fetchData } from "../Covid19Stats";
 import "./Stats.css";
 
-class Stats extends React.Component {
+class Covid19Stats extends React.Component {
   state = {
     data: {},
     country: "",
@@ -49,4 +49,4 @@ class Stats extends React.Component {
   }
 }
 
-export default Stats;
+export default Covid19Stats;
