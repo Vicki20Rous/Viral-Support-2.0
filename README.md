@@ -17,7 +17,7 @@
   
   *Steps required to install and use the project and how to get the development environment running:*
   
-  Download the repository. In the project directory, you can install the necessary dependencies and run: "npm start" Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
+  Download the repository. In the project directory, you can install the necessary dependencies and run: "npm run client" Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
   
   ## Tests
   

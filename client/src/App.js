@@ -24,7 +24,7 @@ class App extends Component {
             <About />
           </Route>
 
-          <Route path="/Chat">
+          <Route path="/Join">
             <Chat />
           </Route>
 

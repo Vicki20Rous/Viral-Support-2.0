@@ -21,7 +21,7 @@ class Navbar extends Component {
             >
               Home
             </NavLink>
-  
+
             <Link
               className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/Stats"
@@ -34,7 +34,7 @@ class Navbar extends Component {
               Stats
             </Link>
 
-            <Link
+            {/* <Link
               className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
               to="/News"
               spy={true}
@@ -44,7 +44,7 @@ class Navbar extends Component {
               onSetActive={Link.handleSetActive}
             >
               News
-            </Link>
+            </Link> */}
 
             <Link
               className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
@@ -58,13 +58,17 @@ class Navbar extends Component {
               About
             </Link>
 
-            <Dropdown/>
+            <Dropdown />
           </nav>
 
           <div className="flex" role="navigation">
-            <Link className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active">
-            Chat
-            </Link>
+            <NavLink
+              to="/Join"
+              activeClassName="is-active"
+              className="items-center hover:bg-red-600 hover:text-white py-2 px-2 mr-2 text-red-800 sm:text-xs md:text-sm lg:text-base xl:text-lg font-serif active"
+            >
+              Chat
+            </NavLink>
 
             <NavLink
               to="/Login"
