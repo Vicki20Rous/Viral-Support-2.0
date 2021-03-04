@@ -2,12 +2,12 @@
 
   ## Description 
   
-  Using React, Tailwind, and Netlify I have made a portfolio page about myself and my work. This site contains a blog page with my latest information and posts, an about page with a description of me and my goals and interests, and a project page with examples of some of my best work. On the project page there are links to the repository and a brief description of the project. Attached at the navbar are four links to my LinkedIn, Github, and facebook.
+  This application was designed to help people stay up to date on COVID-19 information as well as stay connected through these hard times. This react app provides COVID-19 statistics, news, resources, and a chat that allows users to stay connected and share their experiences.
 
-  ![Portfolio screenshot1](/assets/Screenshot1.png?raw=true "Screenshot1")
-  ![Portfolio screenshot2](/assets/Screenshot2.png?raw=true "Screenshot2")
-  ![Portfolio screenshot3](/assets/Screenshot3.png?raw=true "Screenshot3")
-  ![Portfolio screenshot4](/assets/Screenshot4.png?raw=true "Screenshot4")
+  ![screenshot1](/assets/Screenshot1.png?raw=true "Screenshot1")
+  ![screenshot2](/assets/Screenshot2.png?raw=true "Screenshot2")
+  ![screenshot3](/assets/Screenshot3.png?raw=true "Screenshot3")
+  ![screenshot4](/assets/Screenshot4.png?raw=true "Screenshot4")
   ## Table of Contents
     * [Installation](#installation)
     * [Tests](#tests)
@@ -35,5 +35,5 @@
   
   Contact me with any questions using the information below:
  
-  GitHub: [@Gavinmr1](https://api.github.com/users/Gavinmr1)
+  GitHub: [@Vicki20Rous](https://github.com/Vicki20Rous/Viral-Support-2.0)
   

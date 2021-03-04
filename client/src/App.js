@@ -4,12 +4,11 @@ import Navbar from "./components/Navbar";
 import Main from "./Pages/Main/Main";
 import Footer from "./components/Footer";
 import Stats from "./Pages/Stats/Stats";
-import News from "./Pages/News/News";
+// import News from "./Pages/News/News";
 import About from "./Pages/About/About";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-import ChatApp from "./components/ChatApp";
-
+import Chat from "./components/Chat/Chat";
 
 class App extends Component {
   state = {};
@@ -18,13 +17,15 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Switch>
-
           <Route exact path="/">
             <Main />
             <Stats />
-            <News />
+            {/* <News /> */}
             <About />
-            <ChatApp />
+          </Route>
+
+          <Route path="/Chat">
+            <Chat />
           </Route>
 
           <Route path="/Login">
@@ -34,7 +35,6 @@ class App extends Component {
           <Route path="/SignUp">
             <SignUp />
           </Route>
-          
         </Switch>
         <Footer />
       </div>
@@ -42,4 +42,3 @@ class App extends Component {
   }
 }
 export default App;
-
