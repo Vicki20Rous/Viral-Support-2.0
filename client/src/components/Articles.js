@@ -6,13 +6,15 @@ import moment from 'moment';
 export default class Article extends React.Component {
   render() {
     const {
-      // category: 'health',
-      title,
-      description,
-      publishedAt,
-      source,
-      urlToImage,
-      url
+      author: {},
+      title: {},
+      description: {},
+      url: {},
+      source: {},
+      image: {},
+      country: {},
+      published_at: {},
+      
     } = this.props.article;
     const { noteStyle, featuredTitleStyle } = styles;
     const time = moment(publishedAt || moment.now()).fromNow();

@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "react": "^17.0.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "viral-support-2.0",
+  "description": "Using React, Tailwind, and Netlify I have made a portfolio page about myself and my work. This site contains a blog page with my latest information and posts, an about page with a description of me and my goals and interests, and a project page with examples of some of my best work. On the project page there are links to the repository and a brief description of the project. Attached at the navbar are four links to my LinkedIn, Github, and facebook.",
+  "version": "1.0.0",
+  "main": "craco.config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicki20Rous/Viral-Support-2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vicki20Rous/Viral-Support-2.0/issues"
+  },
+  "homepage": "https://github.com/Vicki20Rous/Viral-Support-2.0"
 }
