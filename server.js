@@ -5,10 +5,11 @@ const morgan = require('morgan')
 
 
 const app = express();
+const log = console.log;
 const PORT = process.env.PORT || 8080;
 
 
-const routes = require("./routes/api");
+const routes = require("./servers/routes");
 
 const MONGODB_URI ='mongodb+srv://covid-relief:LuLa7600@cluster0.b2djq.mongodb.net/viralsupport2?retryWrites=true&w=majority';
 

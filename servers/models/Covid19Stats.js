@@ -8,7 +8,7 @@ const Covid19StatsSchema = new Schema({
       type: String, 
       default: Date.now() 
     }
-}),
+});
 
 const Covid19Stats = mongoose.model("Covid19Stats", Covid19StatsSchema);
 
