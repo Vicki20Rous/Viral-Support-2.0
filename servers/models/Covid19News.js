@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
+
 const Covid19NewsSchema = new Schema({
+    data: String,
     title: String,
     body: String,
     date: {
