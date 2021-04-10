@@ -2,22 +2,30 @@
   "dependencies": {
     "axios": "^0.21.1",
     "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
     "craco": "^0.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^5.11.18",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
     "react": "^17.0.1"
   },
   "scripts": {
-    "start": "node server.js",
-    "client": "cd client && npm start",
-    "dev": "concurrently -n 'server,client' \"nodemon server.js\" \"npm run client\""
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node ./server/server.js",
+    "start:dev": "concurrently \"nodemon ./server/server.js\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "test": "echo \"hello world\""
   },
   "name": "viral-support-2.0",
-  "description": "Using React, Tailwind, and Netlify I have made a portfolio page about myself and my work. This site contains a blog page with my latest information and posts, an about page with a description of me and my goals and interests, and a project page with examples of some of my best work. On the project page there are links to the repository and a brief description of the project. Attached at the navbar are four links to my LinkedIn, Github, and facebook.",
+  "description": "Viral Support is website that provides consumers with the latest statistics, news, vaccine locations and safety tips regarding the coronavirus.",
   "version": "1.0.0",
-  "main": "craco.config.js",
+  "main": "server/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vicki20Rous/Viral-Support-2.0.git"

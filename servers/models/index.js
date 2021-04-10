@@ -1,4 +1,4 @@
-// module.exports = {
-//     Stats: require("./stats"),
-//     News: require("./news")
-// };
+module.exports = {
+    Stats: require("./stats"),
+    News: require("./news")
+};

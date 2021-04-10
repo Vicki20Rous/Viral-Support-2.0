@@ -1,7 +1,7 @@
-// const newsController = require("./newsController");
-// const newsstatsController = require("./newsstatsControllers");
+const newsController = require("./newsController");
+const newsstatsController = require("./newsstatsControllers");
 
-// module.exports = {
-//     news: newsController,
-//     stats: newsstatsController
-// }
+module.exports = {
+    news: newsController,
+    stats: newsstatsController
+}
