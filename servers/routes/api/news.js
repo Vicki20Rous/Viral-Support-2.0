@@ -1,8 +1,8 @@
 const express = require('express');
 
 const router = express.Router();
-
-const Covid19News = require('../models/Covid19News');
+const db = require("../../controllers");
+const Covid19News = require('../../models/Covid19News');
 
 router.get('/api', (req, res) => {
     Covid19News.find({  })

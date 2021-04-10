@@ -14,18 +14,18 @@
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node ./server/server.js",
-    "start:dev": "concurrently \"nodemon ./server/server.js\" \"npm run client\"",
+    "start:prod": "node ./servers/server.js",
+    "start:dev": "concurrently \"nodemon ./servers/server.js\" \"npm run client\"",
     "client": "cd client && npm run start",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "install": "concurrently \"cd client && npm install\" \"cd servers && npm install\"",
     "test": "echo \"hello world\""
   },
   "name": "viral-support-2.0",
   "description": "Viral Support is website that provides consumers with the latest statistics, news, vaccine locations and safety tips regarding the coronavirus.",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "servers/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vicki20Rous/Viral-Support-2.0.git"

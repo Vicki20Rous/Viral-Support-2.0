@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-import { getNews } from '../../../../servers/routes/api/newsapi';
+import { getNews } from '../../../../servers/utils/newsapi';
 import Article from '../News/NewsArticle';
 export default class NewsApp extends React.Component {
     constructor(props) {

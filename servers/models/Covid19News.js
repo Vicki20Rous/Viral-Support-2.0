@@ -1,18 +1,29 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
-const Covid19NewsSchema = new Schema({
-    data: String,
-    title: String,
-    description: String,
-    date: {
+const Covid19NewsSchema = new mongoose.Schema({
+    author: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    url: {
       type: String, 
-      default: Date.now() 
+      required: true
+    },
+    published_at: {
+      type: Date
+    },
+    updated_date: {
+      type: Date,
+      default: Date.now
     }
 });
 
-
-const Covid19News = mongoose.model('Covid19News', Covid19NewsSchema);
-
-module.exports = Covid19News
+module.exports = Covid19News = mongoose.model('Covid19News', Covid19NewsSchema);
