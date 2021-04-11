@@ -6,9 +6,10 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Victoria R/ Gavin R.",
+  "author": "Victoria R / Gavin R.",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.6",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

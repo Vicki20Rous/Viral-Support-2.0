@@ -26,4 +26,4 @@ const Covid19NewsSchema = new mongoose.Schema({
     }
 });
 
-module.exports = Covid19News = mongoose.model('Covid19News', Covid19NewsSchema);
+module.exports = Covid19News = mongoose.model('covid19news', Covid19NewsSchema);
