@@ -1,6 +1,5 @@
     {
-       "mongoURI":
-       "mongodb+srv://covid-relief:LuLa7600@cluster0.b2djq.mongodb.net/viral_support2?retryWrites=true&w=majority",
+       "mongoURI": "mongodb+srv://covid-relief:LuLa7600@cluster0.b2djq.mongodb.net/viral_support2?retryWrites=true&w=majority",
        "API_KEY": "5f6908ebaf00fb9047a10094bc96ca13"
 
     }
