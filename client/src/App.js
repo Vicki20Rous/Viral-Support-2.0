@@ -7,7 +7,7 @@ import Stats from "./Pages/Stats/Stats";
 import About from "./Pages/About/About";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-import Chat from "./components/Chat/Chat";
+// import Chat from "./components/Chat/Chat";
 import News from "./Pages/News/NewsApp"
 class App extends Component {
   state = {};
@@ -23,9 +23,9 @@ class App extends Component {
             <About />
           </Route>
 
-          <Route path="/Join">
+          {/* <Route path="/Join">
             <Chat />
-          </Route>
+          </Route> */}
 
           <Route path="/Login">
             <Login />

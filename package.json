@@ -1,17 +1,8 @@
 {
-  "dependencies": {
-    "axios": "^0.21.1",
-    "concurrently": "^6.0.0",
-    "cors": "^2.8.5",
-    "craco": "^0.0.3",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.11.18",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.7",
-    "react": "^17.0.1"
-  },
+  "name": "viral-support-2.0",
+  "description": "Viral Support is website that provides consumers with the latest statistics, news, vaccine locations and safety tips regarding the coronavirus.",
+  "version": "1.0.0",
+  "main": "servers/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node ./servers/server.js",
@@ -22,18 +13,18 @@
     "install": "concurrently \"cd client && npm install\" \"cd servers && npm install\"",
     "test": "echo \"hello world\""
   },
-  "name": "viral-support-2.0",
-  "description": "Viral Support is website that provides consumers with the latest statistics, news, vaccine locations and safety tips regarding the coronavirus.",
-  "version": "1.0.0",
-  "main": "servers/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vicki20Rous/Viral-Support-2.0.git"
   },
-  "author": "",
+  "author": "Victoria R/Gavin R",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vicki20Rous/Viral-Support-2.0/issues"
   },
-  "homepage": "https://github.com/Vicki20Rous/Viral-Support-2.0"
+  "homepage": "https://github.com/Vicki20Rous/Viral-Support-2.0",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "if-env": "^1.0.4"
+  }
 }
