@@ -1,27 +1,22 @@
 const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-const dotenv = require('dotenv')
-const routesUrls = require("./servers/routes/api");
+const connectDB = require('./config/db');
 const cors = require('cors')
-// const morgan = require('morgan')
 
-dotenv.config()
+const Covid19News = require('./routes/api/router')
 
-mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("Database connected"))
+const app = express();
 
-// mongoose.connect(MONGODB_URI || 'mongodb://localhost/viralsupport2', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
+connectDB();
+ 
+app.use(cors({ origin: true, credentials: true }));
 
-// mongoose.connection.on('connected', () => {
-//   console.log('Mongoose is connected !!!!!');
-// });
+app.use(express.json({ extended: false }));
 
-app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-app.use(morgan('tiny'));
-app.use('/', routes);
-app.use(cors())
-app.listen(4000, console.log ("Server is running 🔥"))
+app.get('/', (req, res) => res.send('Server working '));
+
+app.use('/api/router', Covid19News);
+
+
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => console.log `Server is running on port 🔥`);

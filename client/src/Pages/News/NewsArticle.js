@@ -1,61 +1,15 @@
-import React from "react";
-import { View, Linking, TouchableNativeFeedback } from 'react-native';
-import { Text, Card, Divider } from 'react-native-elements';
-import moment from 'moment';
+// import React from "react";
 
-export default class NewsArticle extends React.Component {
-    render() {
-        const {
-            title,
-            description,
-            publishedAt,
-            source,
-            urlToImage,
-            url
-        } = this.props.article;
-        const { noteStyle, featuredTitleStyle } = styles;
-        const time = moment(publishedAt || moment.now()).fromNow();
-        const defaultImg = 'null';
+// function NewsArticle({ data }) {
+//     return (
+//         <div className="news">
+//             <h1 className="news__title">{data.title}</h1>
+//             <p className="news__desc">{data.description}</p>
+//             <span className="news__author">{data.author}</span> <br />
+//             <span className="news__published">{data.publishedAt}</span>
+//             <span className="news__source">{data.source.name}</span>
+//         </div>
+//     );
+// }
 
-        return (
-            <TouchableNativeFeedback>
-                useForeground
-                onPress={() => Linking.openURL(url)}
-            
-            <Card>
-                featuredTitle={title}
-                featuredTitleStyle={featuredTitleStyle}
-                image={{
-                    uri: urlToImage || defaultImg
-                }}
-            
-            <Text style={{ marginBottom: 10 }}>
-                {description || 'Read More..'}
-            </Text>
-            <Divider style={{ backgroundColor: '#dfe6e9' }} />
-            <View>
-                style={{ flexDirection: 'row', justifyContent: 'space-between'}}
-            
-            <Text style={noteStyle}>{source.name.toUpperCase()}</Text>
-            <Text style={noteStyle}>{time}</Text>
-            </View>
-            </Card>
-            </TouchableNativeFeedback>
-        );
-    }
-}
-
-const styles = {
-    noteStyle: {
-        margin: 5,
-        fontStyle: 'bold',
-        color: '#6e0101',
-        fontSize: 10
-    },
-    featuredTitleStyle: {
-        marginHorizontal: 5,
-        textShadowColor: '#6e0101',
-        textShadowOffset: { width: 3, height: 3 },
-        textShadowRadius: 3
-      }
-    };
+// export default NewsArticle;

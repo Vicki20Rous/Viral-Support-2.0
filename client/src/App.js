@@ -8,8 +8,7 @@ import Stats from "./Pages/Stats/Stats";
 import About from "./Pages/About/About";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-import Chat from "./components/Chat/Chat";
-import News from "./Pages/News/NewsApp"
+
 class App extends Component {
   state = {};
   render() {
@@ -20,13 +19,10 @@ class App extends Component {
           <Route exact path="/">
             <Main />
             <Stats />
-            <News />
+            {/* <News /> */}
             <About />
           </Route>
 
-          <Route path="/Join">
-            <Chat />
-          </Route>
 
           <Route path="/Login">
             <Login />
